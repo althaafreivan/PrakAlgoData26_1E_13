@@ -30,5 +30,5 @@
 2. Hasil Running Program:
 ![Tugas 2-1](./tugas2_1.png)
 ![Tugas 2-2](./tugas2_2.png)
-
+  
 ### Pertanyaan Percobaan 1
