@@ -80,5 +80,13 @@ public class MahasiswaMain13 {
 2. Menggunakan titik setelah variable object dan diikuti nama method.
 3. Value dari atribut kelas diubah lewat fungsi ubahKelas, dan value dari ipk yang diubah lewat fungsi updateIpk.
 4. 
-## 2.3.1 Percobaan 3
+## 2.3.2 Verifikasi Hasil Percobaan
  ![Percobaan3](./2.3.1.png)
+ ![Percobaan3](./gitpush231.png)
+
+ ## 2.3.3 Pertanyaan
+ 1. ```public Mahasiswa13(String nm, String nim, double ipk, String kls)```
+ 2. Menginputkan parameter kepada konstruktor class.
+ 3.  ![Percobaan3](./errorkonstruktor.png) Error karena tidak ada konstruktor default.
+ 4.  Tidak, method bisa diakses secara tidak berurutan karena objek sudah diinstatiasi.
+ 5.  ```Mahasiswa13 mhsMDaaniiAlthaaf = new Mahasiswa13("M Daanii Althaaf", "254107020123", "4.0", "TI 1E");```
