@@ -1,8 +1,20 @@
 package minggu2.src;
 
+
 public class Mahasiswa13 {
   static String nim, nama, kelas;
   static double ipk;
+
+  public Mahasiswa13(){
+
+  }
+
+  public Mahasiswa13(String nm, String nim, double ipk, String kls){
+    nama = nm;
+    this.nim = nim;
+    this.ipk = ipk;
+    kelas = kls;
+  }
   
   static void tampilkanInformasi(){
     System.out.println("Nama: " + nama);

@@ -79,3 +79,6 @@ public class MahasiswaMain13 {
 1. ```Mahasiswa13 mhs1 = new Mahasiswa13();```
 2. Menggunakan titik setelah variable object dan diikuti nama method.
 3. Value dari atribut kelas diubah lewat fungsi ubahKelas, dan value dari ipk yang diubah lewat fungsi updateIpk.
+4. 
+## 2.3.1 Percobaan 3
+ ![Percobaan3](./2.3.1.png)
