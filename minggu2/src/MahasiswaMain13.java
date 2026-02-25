@@ -17,6 +17,6 @@ public class MahasiswaMain13 {
     mhs2.updateIpk(3.30);
     mhs2.tampilkanInformasi();
 
-    Mahasiswa13 mhsMDaaniiAlthaaf = new Mahasiswa13("M Daanii Althaaf", "254107020123", "4.0", "TI 1E");
+    Mahasiswa13 mhsMDaaniiAlthaaf = new Mahasiswa13("M Daanii Althaaf", "254107020123", 4.0, "TI 1E");
   }
 }
