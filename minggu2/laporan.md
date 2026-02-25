@@ -90,3 +90,8 @@ public class MahasiswaMain13 {
  3.  ![Percobaan3](./errorkonstruktor.png) Error karena tidak ada konstruktor default.
  4.  Tidak, method bisa diakses secara tidak berurutan karena objek sudah diinstatiasi.
  5.  ```Mahasiswa13 mhsMDaaniiAlthaaf = new Mahasiswa13("M Daanii Althaaf", "254107020123", "4.0", "TI 1E");```
+ 6. ![Percobaan3](./js2p6.png) 
+   
+ ## 2.4 Pertanyaan
+1. ![Percobaan3](./pertanyaan1.png) 
+2. ![Percobaan3](./pertanyaan2.png) 
