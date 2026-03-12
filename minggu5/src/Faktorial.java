@@ -1,4 +1,4 @@
-package minggu5;
+package minggu5.src;
 
 public class Faktorial {
   int faktorialBF(int n){
