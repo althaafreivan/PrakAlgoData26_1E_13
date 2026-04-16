@@ -20,7 +20,17 @@ public class Peminjaman {
   public void hitungDenda() {
     if (lamaPinjam > batasPinjam) {
       terlambat = lamaPinjam - batasPinjam;
-      denda = terlambat * 2000;
+      
+      // Sesi 1.A
+      // Perubahan, menambahkan kalkulasi dan branching harga denda untuk menentukan harga sesuai dengan grade buku
+      int hargaDenda = 0;
+      if(buku.grade == 'A'){
+        hargaDenda = 5000;
+      }else if (buku.grade =='B'){
+        hargaDenda= 2000;
+      }
+
+      denda = terlambat * hargaDenda;
     } else {
       terlambat = 0;
       denda = 0;
@@ -28,6 +38,6 @@ public class Peminjaman {
   }
 
   public void tampilPeminjaman() {
-    System.out.println(mhs.nama + " | " + buku.judul + " | Lama: " + lamaPinjam + " hari | Terlambat: " + terlambat + " hari | Denda: " + denda);
+    System.out.println(mhs.nama + " | " + buku.judul + " | Lama: " + lamaPinjam + " hari | Terlambat: " + terlambat + " hari | Denda: " + denda + " | Grade Buku: " + buku.grade);
   }
 }
