@@ -1,11 +1,11 @@
 package CM2;
-
 import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
     // Deklarasi objek linkedlist antrian
     DoubleLinkedListAntrian dlantrian = new DoubleLinkedListAntrian();
+    LinkedListRekap rekap = new LinkedListRekap();
     
     // Memakai array biasa karena nanti hanya dilakukan operasi sorting, size untuk membantu menetnukan jumlah data
     int size = 0;
@@ -24,15 +24,21 @@ public class Main {
     Pembeli pbl3 = new Pembeli("Sanri", "08224522222");
     Pembeli pbl4 = new Pembeli("Vania", "08224533333");
 
+    dlantrian.tambahAntrean(pbl1);
+    dlantrian.tambahAntrean(pbl2);
+    dlantrian.tambahAntrean(pbl3);
+    dlantrian.tambahAntrean(pbl4);
+
     // Perulangan untuk fitur utama dan main menu
     do{
-        System.out.println("=======");
+    System.out.println("=======");
     System.out.println("Sistem antrian royal delish");
     System.out.println("=======");
       System.out.println("1. Tambah Antrian");
       System.out.println("2. Cetak Antrian");
       System.out.println("3. Hapus Antrian dan Pesan");
       System.out.println("4. Laporan Pesanan");
+      System.out.println("5. Laporan Rekap");
       System.out.println("0. Keluar");
     System.out.print("Pilih Menu\t: ");
     
@@ -69,6 +75,7 @@ public class Main {
 
         if(size<pesanan.length){
           pesanan[size] = pesananBaru;
+          rekap.tambahRekap(pesananBaru.namaPesanan);
           dlantrian.hapusAntrianDanPesan();
           size++;
         }else{
@@ -93,6 +100,9 @@ public class Main {
           if(pesanan2!=null)
           System.out.println(pesanan2.kodePesanan + "\t" +pesanan2.namaPesanan+ "\t" +pesanan2.harga);
         }
+        break;
+      case 5:
+        rekap.cetakRekap();
         break;
         default:
           System.out.println("Pilihan Tidak Valid");
